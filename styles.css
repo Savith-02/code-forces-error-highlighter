@@ -1,0 +1,261 @@
+/* Add your custom CSS styles here */
+/* .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+} */
+body {
+  width: 100%;
+  padding: 1rem;
+  overflow-x: hidden;
+}
+/* .button-container {
+  width: 100%;
+} */
+#content {
+  width: 100%;
+}
+.textarea {
+  width: 30%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+/* .input-container {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.output-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+} */
+.lines {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+/* .highlight {
+  background-color: yellow;
+} */
+
+/* Container styles */
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+} */
+
+/* .input-container,
+.output-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+} */
+
+textarea {
+  height: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-family: Arial, sans-serif;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.button-container button:hover {
+  background-color: #0056b3;
+}
+
+.output-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.output-container div {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  font-family: Arial, sans-serif;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+/* Add your custom CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.input-container,
+.output-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 48%;
+  height: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 1rem;
+  margin-right: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.input-group input {
+  margin-bottom: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label {
+  font-size: 0.9rem;
+}
+
+.button-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.button-group button:hover {
+  background-color: #0056b3;
+}
+
+.output-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.output-container div {
+  font-size: 0.8rem;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  font-family: Arial, sans-serif;
+  /* height: max-content; */
+  min-height: 400px;
+  overflow-y: auto;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+#output1 {
+  overflow-y: hidden; /* Disable individual scrollbars */
+  overflow-x: hidden;
+}
+#output2 {
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+#heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.5rem 1rem;
+}
+#heading span {
+  display: inline-block;
+  width: 33%;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Line Highlighter</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="R.png">
+
+  </head>
+  <body>
+       <div class="button-container">
+        <div class="input-group">
+            <label for="inputTest">No. of lines corresponding to a testcase in input?</label>
+            <input type="number" id="inputTest" placeholder="Enter number...">
+            <label for="inputOffset">Test cases input starts from which line in input?</label>
+            <input type="number" id="inputOffset" placeholder="Offset from top of input..">
+        </div>
+        <div class="input-group">
+            <label for="testCaseNumber">Which test case had the error?</label>
+            <input type="number" id="testCaseNumber" placeholder="Enter line number...">
+            <label for="outputTest">No. of lines corresponding to a testcase in output</label>
+            <input type="number" id="outputTest" placeholder="Enter number..." value="1">
+        </div>
+        <div class="button-group">
+            <button onclick="highlightLines()">Highlight Lines</button>
+        </div>
+    </div>
+     <div id="heading">
+            <span class="output-heading">Input</span>
+            <span class="output-heading">Participants Output</span>
+            <span class="output-heading">Jury's Answer</span>
+        </div>
+      <div id="content">
+        <div class="input-container">
+            <textarea
+              id="input3"
+              placeholder="Enter Problem Input "
+              rows="30"></textarea>
+          <textarea
+            id="input1"
+            placeholder="Enter your output..."
+            rows="30"></textarea>
+          <textarea
+            id="input2"
+            placeholder="Enter answer..."
+            rows="30"></textarea>
+        </div>
+       
+        <div class="output-container">
+            <div id="output3" class="lines"></div>
+          <div id="output1" class="lines"></div>
+          <div id="output2" class="lines"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
