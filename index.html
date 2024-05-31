@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Line Highlighter</title>
+    <title>CF ErrorsLeft</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/svg+xml" href="R.png">
 
@@ -12,15 +12,15 @@
        <div class="button-container">
         <div class="input-group">
             <label for="inputTest">No. of lines corresponding to a testcase in input?</label>
-            <input type="number" id="inputTest" placeholder="Enter number...">
+            <input type="number" id="inputTest" placeholder="Enter number..." min="1">
             <label for="inputOffset">Test cases input starts from which line in input?</label>
-            <input type="number" id="inputOffset" placeholder="Offset from top of input..">
+            <input type="number" id="inputOffset" placeholder="Offset from top of input.." min="1">
         </div>
         <div class="input-group">
             <label for="testCaseNumber">Which test case had the error?</label>
-            <input type="number" id="testCaseNumber" placeholder="Enter line number...">
+            <input type="number" id="testCaseNumber" placeholder="Enter line number..." min="1">
             <label for="outputTest">No. of lines corresponding to a testcase in output</label>
-            <input type="number" id="outputTest" placeholder="Enter number..." value="1">
+            <input type="number" id="outputTest" placeholder="Enter number..." value="1" min="1">
         </div>
         <div class="button-group">
             <button onclick="highlightLines()">Highlight Lines</button>

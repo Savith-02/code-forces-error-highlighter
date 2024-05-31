@@ -1,14 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
   const output1 = document.getElementById("output1");
   const output2 = document.getElementById("output2");
+  const input1 = document.getElementById("input1");
+  const input2 = document.getElementById("input2");
 
   function syncScroll(event) {
     output2.scrollTop = output1.scrollTop;
+  }
+  function syncScroll(event) {
+    input2.scrollTop = input1.scrollTop;
   }
 
   output1.addEventListener("scroll", syncScroll);
   output2.addEventListener("scroll", function () {
     output1.scrollTop = output2.scrollTop;
+  });
+
+  input1.addEventListener("scroll", syncScroll);
+  input2.addEventListener("scroll", function () {
+    input1.scrollTop = input2.scrollTop;
   });
 });
 
@@ -73,7 +83,7 @@ function highlightLines() {
         i + 1 >= inputOffset + (testCaseNumber - 1) * inputTest &&
         i + 1 < inputOffset + testCaseNumber * inputTest
       ) {
-        span3.classList.add("highlight");
+        span3.classList.add("highlight2");
       }
       outputDiv3.appendChild(span3);
     }

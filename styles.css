@@ -233,16 +233,23 @@ label {
   min-height: 400px;
   overflow-y: auto;
 }
-
+.output-container div span {
+  width: 100%;
+}
 .highlight {
-  background-color: yellow;
+  background-color: #ffaaaa;
+}
+.highlight2 {
+  background-color: #ecff81;
 }
 
-#output1 {
+#output1,
+#input1 {
   overflow-y: hidden; /* Disable individual scrollbars */
   overflow-x: hidden;
 }
-#output2 {
+#output2,
+#input2 {
   overflow-x: hidden;
 }
 * {
